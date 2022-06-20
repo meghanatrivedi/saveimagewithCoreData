@@ -1,24 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="saveimagewithCoreData" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pwK-27-8tR">
+                                <rect key="frame" x="57" y="113" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="CZm-80-ueh"/>
+                                    <constraint firstAttribute="width" constant="300" id="Cwh-ZF-M82"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nbr-Z1-7g4">
+                                <rect key="frame" x="157" y="423" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5LQ-pD-Dgk"/>
+                                    <constraint firstAttribute="width" constant="100" id="Jlf-K8-dwL"/>
+                                </constraints>
+                                <state key="normal" title="Get Images"/>
+                                <connections>
+                                    <action selector="btnGetImgClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Keh-Bi-43X"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eSI-ha-Xu7">
+                                <rect key="frame" x="57" y="543" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="03L-Lt-gpG"/>
+                                    <constraint firstAttribute="height" constant="300" id="unJ-ev-Cdm"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HiU-Mc-w9D">
+                                <rect key="frame" x="157" y="483" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fVV-zF-zWw"/>
+                                    <constraint firstAttribute="width" constant="100" id="p1W-p9-ELj"/>
+                                </constraints>
+                                <state key="normal" title="Save Image"/>
+                                <connections>
+                                    <action selector="btnSaveImgClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W9O-1r-FrI"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Nbr-Z1-7g4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EvT-RD-8Ig"/>
+                            <constraint firstItem="Nbr-Z1-7g4" firstAttribute="top" secondItem="pwK-27-8tR" secondAttribute="bottom" constant="10" id="Lxu-mK-Eoc"/>
+                            <constraint firstItem="pwK-27-8tR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M2X-8e-hyq"/>
+                            <constraint firstItem="HiU-Mc-w9D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Uhb-fF-m8L"/>
+                            <constraint firstItem="eSI-ha-Xu7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WiW-h7-DJX"/>
+                            <constraint firstItem="Nbr-Z1-7g4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="blJ-SH-b63"/>
+                            <constraint firstItem="eSI-ha-Xu7" firstAttribute="top" secondItem="HiU-Mc-w9D" secondAttribute="bottom" constant="10" id="lvE-yK-fV8"/>
+                            <constraint firstItem="HiU-Mc-w9D" firstAttribute="top" secondItem="Nbr-Z1-7g4" secondAttribute="bottom" constant="10" id="pqw-0k-pAa"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnGetImag" destination="Nbr-Z1-7g4" id="54v-tY-S9B"/>
+                        <outlet property="btnSaveImg" destination="HiU-Mc-w9D" id="Ue0-j3-zUT"/>
+                        <outlet property="imgFirst" destination="pwK-27-8tR" id="DFX-xS-zz3"/>
+                        <outlet property="imgSecond" destination="eSI-ha-Xu7" id="egl-I8-aGo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="72.991071428571431"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

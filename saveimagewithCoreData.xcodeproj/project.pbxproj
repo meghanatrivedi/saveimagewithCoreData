@@ -16,6 +16,10 @@
 		C7A2E7E82860B7BA009FD40C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7A2E7E62860B7BA009FD40C /* LaunchScreen.storyboard */; };
 		C7A2E7F32860B7BB009FD40C /* saveimagewithCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A2E7F22860B7BB009FD40C /* saveimagewithCoreDataTests.swift */; };
 		C7A2E7FE2860B7BB009FD40C /* saveimagewithCoreDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A2E7FD2860B7BB009FD40C /* saveimagewithCoreDataUITests.swift */; };
+		C7A2E8172860BA52009FD40C /* ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A2E8162860BA52009FD40C /* ImagePickerManager.swift */; };
+		C7A2E81C2860BF6A009FD40C /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A2E81B2860BF6A009FD40C /* DatabaseHelper.swift */; };
+		C7A2E8222860C186009FD40C /* Profile+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A2E8202860C186009FD40C /* Profile+CoreDataClass.swift */; };
+		C7A2E8232860C186009FD40C /* Profile+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A2E8212860C186009FD40C /* Profile+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		C7A2E7F92860B7BB009FD40C /* saveimagewithCoreDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = saveimagewithCoreDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7A2E7FD2860B7BB009FD40C /* saveimagewithCoreDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saveimagewithCoreDataUITests.swift; sourceTree = "<group>"; };
 		C7A2E7FF2860B7BB009FD40C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7A2E8162860BA52009FD40C /* ImagePickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
+		C7A2E81B2860BF6A009FD40C /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
+		C7A2E8202860C186009FD40C /* Profile+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C7A2E8212860C186009FD40C /* Profile+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,8 @@
 		C7A2E7D72860B7B8009FD40C /* saveimagewithCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				C7A2E8202860C186009FD40C /* Profile+CoreDataClass.swift */,
+				C7A2E8212860C186009FD40C /* Profile+CoreDataProperties.swift */,
 				C7A2E7D82860B7B8009FD40C /* AppDelegate.swift */,
 				C7A2E7DA2860B7B8009FD40C /* SceneDelegate.swift */,
 				C7A2E7DC2860B7B8009FD40C /* ViewController.swift */,
@@ -109,6 +119,8 @@
 				C7A2E7E62860B7BA009FD40C /* LaunchScreen.storyboard */,
 				C7A2E7E92860B7BA009FD40C /* Info.plist */,
 				C7A2E7E12860B7B8009FD40C /* saveimagewithCoreData.xcdatamodeld */,
+				C7A2E8162860BA52009FD40C /* ImagePickerManager.swift */,
+				C7A2E81B2860BF6A009FD40C /* DatabaseHelper.swift */,
 			);
 			path = saveimagewithCoreData;
 			sourceTree = "<group>";
@@ -262,8 +274,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7A2E7DD2860B7B8009FD40C /* ViewController.swift in Sources */,
+				C7A2E8172860BA52009FD40C /* ImagePickerManager.swift in Sources */,
+				C7A2E8222860C186009FD40C /* Profile+CoreDataClass.swift in Sources */,
 				C7A2E7D92860B7B8009FD40C /* AppDelegate.swift in Sources */,
 				C7A2E7DB2860B7B8009FD40C /* SceneDelegate.swift in Sources */,
+				C7A2E81C2860BF6A009FD40C /* DatabaseHelper.swift in Sources */,
+				C7A2E8232860C186009FD40C /* Profile+CoreDataProperties.swift in Sources */,
 				C7A2E7E32860B7B8009FD40C /* saveimagewithCoreData.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
